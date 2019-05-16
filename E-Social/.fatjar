@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sat May 19 10:38:26 CST 2012
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=D\:\\jeespace\\E-Social\\E-Social_fat.jar
+manifest.mergeall=true
+manifest.mainclass=MainFrame
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

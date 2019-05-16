@@ -1,0 +1,10 @@
+2012-09-17 17:28:56,514 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://www.sina.com.cn
+2012-09-17 17:29:18,173 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://login.sina.com.cn
+2012-09-17 17:29:21,649 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://mail.sina.com.cn/
+2012-09-17 17:29:22,371 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://blog.sina.com.cn/
+2012-09-17 17:29:51,277 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://video.sina.com.cn/
+2012-09-17 17:30:06,151 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://bbs.sina.com.cn/
+2012-09-17 17:30:30,505 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://login.sina.com.cn/
+2012-09-17 17:30:34,773 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://login.sina.com.cn/member/security/password.php
+2012-09-17 17:30:39,415 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://help.sina.com.cn/index.php
+2012-09-17 17:30:45,039 [main] INFO  webSpider.simpleSpider.SimpleSpider - fecth:http://news.sina.com.cn/guide/

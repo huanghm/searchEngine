@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="create_index.log" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="log/create_index.txt" />
+		<param name="Append" value="false" />
+		<param name="MaxBackupIndex" value="10" />
+		<param name="MaxFileSize" value="100KB" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} [%t] %-5p %c{3} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="search.log" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="log/search.txt" />
+		<param name="Append" value="false" />
+		<param name="MaxBackupIndex" value="10" />
+		<param name="MaxFileSize" value="100KB" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} [%t] %-5p %c{3} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} [%t] %-5p %c{3} - %m%n" />
+		</layout>
+	</appender>
+	<logger name = "org.hibernate">
+		<level value = "error"/>
+		<appender-ref ref="STDOUT" />
+	<!--	<appender-ref ref="create_index.log" /> -->
+	</logger>
+	<logger name = "org.jbox.searcher">
+		<level value = "error"/>
+		<appender-ref ref="STDOUT" />
+	<!--	<appender-ref ref="search.log" /> -->
+	</logger>
+	<root>
+		<priority value="info" />
+		<appender-ref ref="STDOUT" />
+	<!--	<appender-ref ref="create_index.log" /> -->
+	</root>
+</log4j:configuration>

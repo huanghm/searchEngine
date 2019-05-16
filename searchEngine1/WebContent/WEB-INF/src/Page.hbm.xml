@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2007-8-4 11:26:32 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="org.jbox.dao.Page" table="page" catalog="searchengineer" lazy="true">
+        <comment></comment>
+        <id name="urlId" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="url" type="string">
+            <column name="url" length="65535" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="text" type="string">
+            <column name="pageText">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="800">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="wordNum" type="java.lang.Integer">
+            <column name="wordNum">
+                <comment></comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
