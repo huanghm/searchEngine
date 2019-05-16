@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jbox-configuration>
+	<webSpider class = "org.jbox.webSpider.simpleSpider.SimpleSpider">
+		<maxPageNum>10</maxPageNum>
+		<startUrls>
+			<property name = "URL">http://localhost/</property>
+		</startUrls>
+		<crawlRules>
+			<property name = "Rule">http://localhost.*</property>
+		</crawlRules>
+	</webSpider>
+	
+	<cutterBox>
+		<cutter language="EN" class="org.jbox.textCutter.EN.SimpleENCutter">
+			<property name = "UnicodeScope" start="0x0030" end="0x0039"/>
+			<property name = "UnicodeScope" start="0x0041" end="0x005a"/>
+			<property name = "UnicodeScope" start="0x0061" end="0x007a"/>
+		</cutter>
+		<cutter language="CJK" class="org.jbox.textCutter.CJK.SimpleCJKCutter">
+			<property name = "UnicodeBlock">CJK_UNIFIED_IDEOGRAPHS</property>
+			<property name = "UnicodeBlock">KATAKANA</property>
+			<property name = "UnicodeBlock">HANUNOO</property>
+		</cutter>
+	</cutterBox>
+
+	<indexWriter class = "org.jbox.indexer.IndexWriterWithTFLOC">
+		<property name = "PageHome">org.jbox.dao.PageHomeByHibernate</property>
+		<property name = "WordHome">org.jbox.dao.WordHomeByHibernate</property>
+	</indexWriter>
+		
+	<searcher class = "org.jbox.searcher.simpleSearcher.SimpleSearcher">
+		<property name = "PageHome">org.jbox.dao.PageHomeByHibernate</property>
+		<property name = "WordHome">org.jbox.dao.WordHomeByHibernate</property>
+	</searcher>
+
+</jbox-configuration>
